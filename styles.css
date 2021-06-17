@@ -1,0 +1,115 @@
+body {
+    margin: 0 auto;
+    font-family: "Open Sans";
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.site-header a:hover {
+    text-decoration: none;
+    color: #202020;
+    font-weight: bold;
+}
+
+.site-header nav a {
+    padding: 10px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper-about #content {
+    background: #ffffff;
+    color: rgb(15, 15, 15);
+    padding: 25px;
+    padding-bottom: 60px;
+}
+
+.wrapper-about aside {
+
+    background: #535353;
+    color: white;
+    padding: 25px;
+    padding-bottom: 60px;
+}
+
+
+
+@media only screen and (min-width: 1063px) {
+    .wrapper-about {
+        display: flex;
+    }
+
+    .wrapper-about #content {
+        width: 100%;
+    }
+
+    .wrapper-about aside {
+        width: 400px;
+    }
+}
+
+.dev-icons {
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.software-skill-inline {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.software-skill-inline>i {
+    color: #ffffff;
+}
+
+.software-skill-inline>p {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.fab,
+.far {
+    font-weight: 400;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}

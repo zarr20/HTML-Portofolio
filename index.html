@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Dzarr Portofolio</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper" style=" padding-top: 20px; ">
+            <a href="/"><img src="header-logo.svg"></a>
+            <nav class="nav">
+                <a href="https://github.com/zarr20">Github</a>
+            </nav>
+        </div>
+
+    </header>
+    <div style="text-align: center;margin-top: -50px;">
+        <img id="dzarr" src="dzarr-foto.png" style=" margin-bottom: -5px; ">
+    </div>
+    <div style=" padding: 40px 0; background-color: #8E17C6;color:white">
+
+        <div class="wrapper">
+
+            <div style="text-align: center;">
+                <div class="software-skills-main-div">
+                    <h1 style="margin-bottom: 0;">What I do </h1>
+                    <p style="margin-top: 0;margin-bottom: 2.5em;">
+                        CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH
+                        STACK
+                    </p>
+                    <ul class="dev-icons">
+                        <li class="software-skill-inline" name="html-5"><i class="fab fa-html5"></i>
+                            <p>html-5</p>
+                        </li>
+                        <li class="software-skill-inline" name="css3"><i class="fab fa-css3-alt"></i>
+                            <p>css3</p>
+                        </li>
+                        <li class="software-skill-inline" name="sass"><i class="fab fa-sass"></i>
+                            <p>sass</p>
+                        </li>
+                        <li class="software-skill-inline" name="JavaScript"><i class="fab fa-js"></i>
+                            <p>JavaScript</p>
+                        </li>
+                        <li class="software-skill-inline" name="reactjs"><i class="fab fa-react"></i>
+                            <p>reactjs / react native</p>
+                        </li>
+                        <li class="software-skill-inline" name="npm"><i class="fab fa-npm"></i>
+                            <p>npm</p>
+                        </li>
+                        <li class="software-skill-inline" name="sql-database"><i class="fas fa-database"></i>
+                            <p>sql-database</p>
+                        </li>
+                        <li class="software-skill-inline" name="sql-database"><i class="fab fa-php"></i>
+                            <p>php</p>
+                        </li>
+                        <li class="software-skill-inline" name="sql-database"><i class="fab fa-free-code-camp"></i>
+                            <p>codeigniter</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style=" padding: 40px 0;background-color: #F3F3F3;">
+        <div class=" wrapper wrapper-about">
+            <div id="content">
+                <article>
+                    <h1>Profile</h1>
+                    <p>
+                        <b>Name</b> : Dzarr al ghifari </br>
+                        <b>Date of Brith</b> : Bogor, 20 January 2000</br>
+                        <b>Religion</b> : Islam</br>
+                        <b>Phone</b> : 0812 8594 9903</br>
+                        <b>Email</b> : Dzarrzoy@gmail.com</br>
+                    </p>
+                </article>
+                <hr>
+                <article>
+                    <h1>Work Experience</h1>
+                    <p>
+                        <b>2018</b></br>
+                        Sparadise Spa Grand Mercure - Freelance Web Developer</br>
+                        Lavon Swan City Marketing - Freelance Web Developer)</br>
+                        <b>2021</b></br>
+                        PT Omind Muda Berkarya Indonesia – Front-End
+                    </p>
+                </article>
+            </div>
+            <aside>
+                <h1>Hello! I am a Fullstack Developer,</h1>I am a Student at Gunadarma University. I have experience
+                in
+                Web
+                Development, currently learning UI/UX, and Front-end using ReactJS and React Native.
+            </aside>
+
+        </div>
+    </div>
+    <div style=" padding: 40px 0;background-color: #F3F3F3;">
+        <div class=" wrapper wrapper-about">
+            Projects
+        </div>
+    </div>
+
+    <footer style="padding: 50px;text-align: center;color: darkgrey;letter-spacing: 3px">DZARR AL GHIFARI - 2021
+    </footer>
+
+    <script>
+        document.getElementById("dzarr").onmouseover = function () {
+            document.getElementById("dzarr").src = "dzarr-foto-hover.png";
+        };
+        document.getElementById("dzarr").onmouseout = function () {
+            document.getElementById("dzarr").src = "dzarr-foto.png";
+        };
+    </script>
+
+    <script>
+        $.ajax({
+            url: 'https://api.github.com/users/zarr20/repos',
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                console.log(response);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
